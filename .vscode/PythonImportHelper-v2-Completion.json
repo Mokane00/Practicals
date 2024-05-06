@@ -1,0 +1,1297 @@
+[
+    {
+        "label": "math",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "math",
+        "description": "math",
+        "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "doctest",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "doctest",
+        "description": "doctest",
+        "detail": "doctest",
+        "documentation": {}
+    },
+    {
+        "label": "print_contacts",
+        "importPath": "practical8",
+        "description": "practical8",
+        "isExtraImport": true,
+        "detail": "practical8",
+        "documentation": {}
+    },
+    {
+        "label": "random",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "random",
+        "description": "random",
+        "detail": "random",
+        "documentation": {}
+    },
+    {
+        "label": "listFromFile",
+        "kind": 2,
+        "importPath": "Cs1401 exam",
+        "description": "Cs1401 exam",
+        "peekOfCode": "def listFromFile(words_file):\n  \"\"\"_summary_\n  Args:\n      words_file (file): file\n  Returns:\n      strings of words: strings\n  \"\"\"\n  try: \n      with open(words_file,\"r\") as file:\n        word = file.read()",
+        "detail": "Cs1401 exam",
+        "documentation": {}
+    },
+    {
+        "label": "vowelCounter",
+        "kind": 2,
+        "importPath": "Cs1401 exam",
+        "description": "Cs1401 exam",
+        "peekOfCode": "def vowelCounter(word):\n    letter = \"AEIOUaeiou\"\n    count = 0\n    for char in word:\n        if char in letter:\n            count += 1\n    return count\ndef wordVowelCountDict(word_list):\n    vowelDict = {}\n    for word in word_list:",
+        "detail": "Cs1401 exam",
+        "documentation": {}
+    },
+    {
+        "label": "wordVowelCountDict",
+        "kind": 2,
+        "importPath": "Cs1401 exam",
+        "description": "Cs1401 exam",
+        "peekOfCode": "def wordVowelCountDict(word_list):\n    vowelDict = {}\n    for word in word_list:\n        vowelDict[vowelCounter(word)] = word\n    return vowelDict\ndef main():\n    wordList = listFromFile(\"word.txt\") \n    wordNumVowels = wordVowelCountDict(wordList)\n    for word, count in wordNumVowels.items():\n        print(f\"{word} has {count} vowels\")",
+        "detail": "Cs1401 exam",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "Cs1401 exam",
+        "description": "Cs1401 exam",
+        "peekOfCode": "def main():\n    wordList = listFromFile(\"word.txt\") \n    wordNumVowels = wordVowelCountDict(wordList)\n    for word, count in wordNumVowels.items():\n        print(f\"{word} has {count} vowels\")\nmain()\nprint(main())    \ndef fibonacci(n):\n    if n <= 0:\n        return \"Input should be a positive integer.\"",
+        "detail": "Cs1401 exam",
+        "documentation": {}
+    },
+    {
+        "label": "fibonacci",
+        "kind": 2,
+        "importPath": "Cs1401 exam",
+        "description": "Cs1401 exam",
+        "peekOfCode": "def fibonacci(n):\n    if n <= 0:\n        return \"Input should be a positive integer.\"\n    elif n == 1:\n        return 0\n    elif n == 2:\n        return 1\n    else:\n        return fibonacci(n - 1) + fibonacci(n - 2)\nold_list = ['hello', 'world', 'python']",
+        "detail": "Cs1401 exam",
+        "documentation": {}
+    },
+    {
+        "label": "remove_negative_numbers",
+        "kind": 2,
+        "importPath": "Cs1401 exam",
+        "description": "Cs1401 exam",
+        "peekOfCode": "def remove_negative_numbers(numbers_list):\n    \"\"\"\n    This function removes negative numbers from a list of numbers.\n    Args:\n        numbers_list (list): A list of numbers.\n    Returns:\n        list: A new list of numbers with negative numbers removed.\n    \"\"\"\n    for index in range(len(numbers_list) - 1, -1, -1):\n        number = numbers_list[index]",
+        "detail": "Cs1401 exam",
+        "documentation": {}
+    },
+    {
+        "label": "has_m",
+        "kind": 2,
+        "importPath": "Cs1401 exam",
+        "description": "Cs1401 exam",
+        "peekOfCode": "def has_m(word):\n    \"\"\"\n    This function takes a string word as a parameter and returns a new string with the letter \"m\" removed,\n    provided that the letter \"m\" does not appear as the first or the last letter in the word.\n    If the letter \"m\" appears as the first or the last letter, the function returns the original word.\n    >>> has_m('hello')\n    'hello'\n    >>> has_m('hamilton')\n    'hailton'\n    \"\"\"",
+        "detail": "Cs1401 exam",
+        "documentation": {}
+    },
+    {
+        "label": "sum_of_digits",
+        "kind": 2,
+        "importPath": "Cs1401 exam",
+        "description": "Cs1401 exam",
+        "peekOfCode": "def sum_of_digits(n):\n    \"\"\"\n    This function takes a positive integer n as input and returns the sum of its digits using recursion.\n    Args:\n        n (int): A positive integer.\n    Returns:\n        int: The sum of the digits of n.\n    Examples:\n        >>> sum_of_digits(12345)\n        15",
+        "detail": "Cs1401 exam",
+        "documentation": {}
+    },
+    {
+        "label": "get_twins_names",
+        "kind": 2,
+        "importPath": "Cs1401 exam",
+        "description": "Cs1401 exam",
+        "peekOfCode": "def get_twins_names(twins_data):\n    \"\"\"\n    This function takes a list of tuples containing twin names and their year of birth,\n    and returns a dictionary of twin names. The names that appear first in the tuple\n    are used as keys.\n    Args:\n        twins_data (list): A list of tuples containing twin names and their year of birth.\n    Returns:\n        dict: A dictionary of twin names.\n    \"\"\"",
+        "detail": "Cs1401 exam",
+        "documentation": {}
+    },
+    {
+        "label": "write_to_file_twins_age",
+        "kind": 2,
+        "importPath": "Cs1401 exam",
+        "description": "Cs1401 exam",
+        "peekOfCode": "def write_to_file_twins_age(output_file, twins_data, current_year):\n    \"\"\"\n    This function takes an output file name, a list of tuples containing twin names and their year of birth,\n    and an integer representing the current year or future year. The function writes to file the age of\n    each pair of twins in the specified year.\n    Args:\n        output_file (str): The name of the output file.\n        twins_data (list): A list of tuples containing twin names and their year of birth.\n        current_year (int): The current year or future year.\n    \"\"\"",
+        "detail": "Cs1401 exam",
+        "documentation": {}
+    },
+    {
+        "label": "C4",
+        "kind": 5,
+        "importPath": "Cs1401 exam",
+        "description": "Cs1401 exam",
+        "peekOfCode": "C4 = int(input(\"followers?: \"))\nD4 = int(input(\"following?: \"))\nratio = C4/D4\nif  ratio > 1:\n  print(\"solid  can follow\")\nelif 0.5 <= ratio <= 1:\n  print(\"Average\")  \nelse:\n  print(\"low\")  \ndef listFromFile(words_file):",
+        "detail": "Cs1401 exam",
+        "documentation": {}
+    },
+    {
+        "label": "D4",
+        "kind": 5,
+        "importPath": "Cs1401 exam",
+        "description": "Cs1401 exam",
+        "peekOfCode": "D4 = int(input(\"following?: \"))\nratio = C4/D4\nif  ratio > 1:\n  print(\"solid  can follow\")\nelif 0.5 <= ratio <= 1:\n  print(\"Average\")  \nelse:\n  print(\"low\")  \ndef listFromFile(words_file):\n  \"\"\"_summary_",
+        "detail": "Cs1401 exam",
+        "documentation": {}
+    },
+    {
+        "label": "ratio",
+        "kind": 5,
+        "importPath": "Cs1401 exam",
+        "description": "Cs1401 exam",
+        "peekOfCode": "ratio = C4/D4\nif  ratio > 1:\n  print(\"solid  can follow\")\nelif 0.5 <= ratio <= 1:\n  print(\"Average\")  \nelse:\n  print(\"low\")  \ndef listFromFile(words_file):\n  \"\"\"_summary_\n  Args:",
+        "detail": "Cs1401 exam",
+        "documentation": {}
+    },
+    {
+        "label": "old_list",
+        "kind": 5,
+        "importPath": "Cs1401 exam",
+        "description": "Cs1401 exam",
+        "peekOfCode": "old_list = ['hello', 'world', 'python']\nnew_list = [obj[:1] + 'x' + obj[2:] if len(obj) > 1 else obj for obj in old_list]\nprint(new_list)  # Output: ['hxll', 'wxrld', 'pxthon']     \ndef remove_negative_numbers(numbers_list):\n    \"\"\"\n    This function removes negative numbers from a list of numbers.\n    Args:\n        numbers_list (list): A list of numbers.\n    Returns:\n        list: A new list of numbers with negative numbers removed.",
+        "detail": "Cs1401 exam",
+        "documentation": {}
+    },
+    {
+        "label": "new_list",
+        "kind": 5,
+        "importPath": "Cs1401 exam",
+        "description": "Cs1401 exam",
+        "peekOfCode": "new_list = [obj[:1] + 'x' + obj[2:] if len(obj) > 1 else obj for obj in old_list]\nprint(new_list)  # Output: ['hxll', 'wxrld', 'pxthon']     \ndef remove_negative_numbers(numbers_list):\n    \"\"\"\n    This function removes negative numbers from a list of numbers.\n    Args:\n        numbers_list (list): A list of numbers.\n    Returns:\n        list: A new list of numbers with negative numbers removed.\n    \"\"\"",
+        "detail": "Cs1401 exam",
+        "documentation": {}
+    },
+    {
+        "label": "pos_num",
+        "kind": 5,
+        "importPath": "Cs1401 practical test1",
+        "description": "Cs1401 practical test1",
+        "peekOfCode": "pos_num = int(input(\"Enter a positive integer: \"))\nprint(pos_num)\nlast_digits = pos_num % 10\nprint(last_digits)\nif last_digits == 8:\n  print(\"Did you know that eight is an even Fibonacci number that happens to be close to ten?\")",
+        "detail": "Cs1401 practical test1",
+        "documentation": {}
+    },
+    {
+        "label": "last_digits",
+        "kind": 5,
+        "importPath": "Cs1401 practical test1",
+        "description": "Cs1401 practical test1",
+        "peekOfCode": "last_digits = pos_num % 10\nprint(last_digits)\nif last_digits == 8:\n  print(\"Did you know that eight is an even Fibonacci number that happens to be close to ten?\")",
+        "detail": "Cs1401 practical test1",
+        "documentation": {}
+    },
+    {
+        "label": "fact",
+        "kind": 2,
+        "importPath": "FAct",
+        "description": "FAct",
+        "peekOfCode": "def fact(n):\n  if n == 1 or n == 0:\n    return 1\n  else:\n    return n * fact(n-1)\nprint(fact(4))",
+        "detail": "FAct",
+        "documentation": {}
+    },
+    {
+        "label": "triangle_area",
+        "kind": 2,
+        "importPath": "Practical7",
+        "description": "Practical7",
+        "peekOfCode": "def triangle_area(base, height):\n    \"\"\"\n    Calculate the area of a triangle.\n    Parameters:\n    base (float): The base of the triangle.\n    height (float): The height of the triangle.\n    Returns:\n    float: The area of the triangle.\n    \"\"\"\n    return 0.5 * base * height",
+        "detail": "Practical7",
+        "documentation": {}
+    },
+    {
+        "label": "isDivisibleBy5",
+        "kind": 2,
+        "importPath": "Practical7",
+        "description": "Practical7",
+        "peekOfCode": "def isDivisibleBy5(n):\n    \"\"\"\n    Check if a number is divisible by 5.\n    Parameters:\n    n (int): The number to check.\n    Returns:\n    bool: True if divisible by 5, False otherwise.\n    \"\"\"\n    return n % 5 == 0\nprint(isDivisibleBy5(20))  ",
+        "detail": "Practical7",
+        "documentation": {}
+    },
+    {
+        "label": "middleNumber",
+        "kind": 2,
+        "importPath": "Practical7",
+        "description": "Practical7",
+        "peekOfCode": "def middleNumber(a, b, c):\n    \"\"\"\n    Find the middle number among three integers.\n    Parameters:\n    a (int): First integer.\n    b (int): Second integer.\n    c (int): Third integer.\n    Returns:\n    int: The middle number.\n    \"\"\"",
+        "detail": "Practical7",
+        "documentation": {}
+    },
+    {
+        "label": "swapFirstLast",
+        "kind": 2,
+        "importPath": "Practical7",
+        "description": "Practical7",
+        "peekOfCode": "def swapFirstLast(word):\n    \"\"\"\n    Swap the first and last characters of a word.\n    Parameters:\n    word (str): The word to swap.\n    Returns:\n    str: The word with first and last characters swapped.\n    \"\"\"\n    return word[-1] + word[1:-1] + word[0]\nprint(swapFirstLast(\"money\"))",
+        "detail": "Practical7",
+        "documentation": {}
+    },
+    {
+        "label": "decimal_to_binary",
+        "kind": 2,
+        "importPath": "Practical7",
+        "description": "Practical7",
+        "peekOfCode": "def decimal_to_binary(n):\n    \"\"\"\n    Convert a number from base 10 to binary.\n    Parameters:\n    n (int): The number in base 10.\n    Returns:\n    str: The binary representation of the number.\n    \"\"\"\n    if n == 0:\n        return '0'",
+        "detail": "Practical7",
+        "documentation": {}
+    },
+    {
+        "label": "differentiate_monomial",
+        "kind": 2,
+        "importPath": "Practical7",
+        "description": "Practical7",
+        "peekOfCode": "def differentiate_monomial(coeff, power):\n    \"\"\"\n    Differentiate a monomial using the power rule.\n    Parameters:\n    coeff (int): Coefficient of the monomial.\n    power (int): Power of the monomial.\n    Returns:\n    str: The differentiated monomial in string format.\n    \"\"\"\n    if power == 0:",
+        "detail": "Practical7",
+        "documentation": {}
+    },
+    {
+        "label": "longer_word",
+        "kind": 2,
+        "importPath": "Practical7",
+        "description": "Practical7",
+        "peekOfCode": "def longer_word(word1, word2):\n    \"\"\"\n    Find the longer word between two words.\n    Parameters:\n    word1 (str): First word.\n    word2 (str): Second word.\n    Returns:\n    str: The longer word or \"equal\" if both words are of equal length.\n    \"\"\"\n    if len(word1) > len(word2):",
+        "detail": "Practical7",
+        "documentation": {}
+    },
+    {
+        "label": "add",
+        "kind": 2,
+        "importPath": "Practical7",
+        "description": "Practical7",
+        "peekOfCode": "def add(a, b):\n    return a + b\ndef subtract(a, b):\n    return a - b\ndef multiply(a, b):\n    return a * b\ndef divide(a, b):\n    if b == 0:\n        return \"Thou shall not divide by zero!!!\"\n    return a // b",
+        "detail": "Practical7",
+        "documentation": {}
+    },
+    {
+        "label": "subtract",
+        "kind": 2,
+        "importPath": "Practical7",
+        "description": "Practical7",
+        "peekOfCode": "def subtract(a, b):\n    return a - b\ndef multiply(a, b):\n    return a * b\ndef divide(a, b):\n    if b == 0:\n        return \"Thou shall not divide by zero!!!\"\n    return a // b\nprint(\"*************************** **** Arithmetic Operations **** ***************************\")\nprint(\"1. Addition\\n2. Subtraction\\n3. Multiplication\\n4. Integer division\")",
+        "detail": "Practical7",
+        "documentation": {}
+    },
+    {
+        "label": "multiply",
+        "kind": 2,
+        "importPath": "Practical7",
+        "description": "Practical7",
+        "peekOfCode": "def multiply(a, b):\n    return a * b\ndef divide(a, b):\n    if b == 0:\n        return \"Thou shall not divide by zero!!!\"\n    return a // b\nprint(\"*************************** **** Arithmetic Operations **** ***************************\")\nprint(\"1. Addition\\n2. Subtraction\\n3. Multiplication\\n4. Integer division\")\na = int(input(\"Enter first integer: \"))\nb = int(input(\"Enter second integer: \"))",
+        "detail": "Practical7",
+        "documentation": {}
+    },
+    {
+        "label": "divide",
+        "kind": 2,
+        "importPath": "Practical7",
+        "description": "Practical7",
+        "peekOfCode": "def divide(a, b):\n    if b == 0:\n        return \"Thou shall not divide by zero!!!\"\n    return a // b\nprint(\"*************************** **** Arithmetic Operations **** ***************************\")\nprint(\"1. Addition\\n2. Subtraction\\n3. Multiplication\\n4. Integer division\")\na = int(input(\"Enter first integer: \"))\nb = int(input(\"Enter second integer: \"))\nchoice = int(input(\"Enter choice of arithmetic operation to perform on two entered integers: \"))\nif choice == 1:",
+        "detail": "Practical7",
+        "documentation": {}
+    },
+    {
+        "label": "original_function",
+        "kind": 5,
+        "importPath": "Practical7",
+        "description": "Practical7",
+        "peekOfCode": "original_function = \"f(x) = 4x^3\"\ncoeff = 4\npower = 3\nderivative = differentiate_monomial(coeff, power)\nprint(f\"Derivative of {original_function} is f'(x) = {derivative}\")\ndef longer_word(word1, word2):\n    \"\"\"\n    Find the longer word between two words.\n    Parameters:\n    word1 (str): First word.",
+        "detail": "Practical7",
+        "documentation": {}
+    },
+    {
+        "label": "coeff",
+        "kind": 5,
+        "importPath": "Practical7",
+        "description": "Practical7",
+        "peekOfCode": "coeff = 4\npower = 3\nderivative = differentiate_monomial(coeff, power)\nprint(f\"Derivative of {original_function} is f'(x) = {derivative}\")\ndef longer_word(word1, word2):\n    \"\"\"\n    Find the longer word between two words.\n    Parameters:\n    word1 (str): First word.\n    word2 (str): Second word.",
+        "detail": "Practical7",
+        "documentation": {}
+    },
+    {
+        "label": "power",
+        "kind": 5,
+        "importPath": "Practical7",
+        "description": "Practical7",
+        "peekOfCode": "power = 3\nderivative = differentiate_monomial(coeff, power)\nprint(f\"Derivative of {original_function} is f'(x) = {derivative}\")\ndef longer_word(word1, word2):\n    \"\"\"\n    Find the longer word between two words.\n    Parameters:\n    word1 (str): First word.\n    word2 (str): Second word.\n    Returns:",
+        "detail": "Practical7",
+        "documentation": {}
+    },
+    {
+        "label": "derivative",
+        "kind": 5,
+        "importPath": "Practical7",
+        "description": "Practical7",
+        "peekOfCode": "derivative = differentiate_monomial(coeff, power)\nprint(f\"Derivative of {original_function} is f'(x) = {derivative}\")\ndef longer_word(word1, word2):\n    \"\"\"\n    Find the longer word between two words.\n    Parameters:\n    word1 (str): First word.\n    word2 (str): Second word.\n    Returns:\n    str: The longer word or \"equal\" if both words are of equal length.",
+        "detail": "Practical7",
+        "documentation": {}
+    },
+    {
+        "label": "a",
+        "kind": 5,
+        "importPath": "Practical7",
+        "description": "Practical7",
+        "peekOfCode": "a = int(input(\"Enter first integer: \"))\nb = int(input(\"Enter second integer: \"))\nchoice = int(input(\"Enter choice of arithmetic operation to perform on two entered integers: \"))\nif choice == 1:\n    print(\"Result:\", add(a, b))\nelif choice == 2:\n    print(\"Result:\", subtract(a, b))\nelif choice == 3:\n    print(\"Result:\", multiply(a, b))\nelif choice == 4:",
+        "detail": "Practical7",
+        "documentation": {}
+    },
+    {
+        "label": "b",
+        "kind": 5,
+        "importPath": "Practical7",
+        "description": "Practical7",
+        "peekOfCode": "b = int(input(\"Enter second integer: \"))\nchoice = int(input(\"Enter choice of arithmetic operation to perform on two entered integers: \"))\nif choice == 1:\n    print(\"Result:\", add(a, b))\nelif choice == 2:\n    print(\"Result:\", subtract(a, b))\nelif choice == 3:\n    print(\"Result:\", multiply(a, b))\nelif choice == 4:\n    print(\"Result:\", divide(a, b))",
+        "detail": "Practical7",
+        "documentation": {}
+    },
+    {
+        "label": "choice",
+        "kind": 5,
+        "importPath": "Practical7",
+        "description": "Practical7",
+        "peekOfCode": "choice = int(input(\"Enter choice of arithmetic operation to perform on two entered integers: \"))\nif choice == 1:\n    print(\"Result:\", add(a, b))\nelif choice == 2:\n    print(\"Result:\", subtract(a, b))\nelif choice == 3:\n    print(\"Result:\", multiply(a, b))\nelif choice == 4:\n    print(\"Result:\", divide(a, b))",
+        "detail": "Practical7",
+        "documentation": {}
+    },
+    {
+        "label": "differentiate_monomial",
+        "kind": 2,
+        "importPath": "differentiate",
+        "description": "differentiate",
+        "peekOfCode": "def differentiate_monomial(coeff, power):\n    \"\"\"\n    Differentiate a monomial using the power rule.\n    Parameters:\n    coeff (int): Coefficient of the monomial.\n    power (int): Power of the monomial.\n    Returns:\n    str: The differentiated monomial in string format.\n    \"\"\"\n    if power == 0:",
+        "detail": "differentiate",
+        "documentation": {}
+    },
+    {
+        "label": "original_function",
+        "kind": 5,
+        "importPath": "differentiate",
+        "description": "differentiate",
+        "peekOfCode": "original_function = \"f(x) = math.cos**3*(x^2+1)\"\ncoeff = 1\npower = 3\nderivative = differentiate_monomial(coeff, power)\nprint(f\"Derivative of {original_function} is f'(x) = {derivative}\")",
+        "detail": "differentiate",
+        "documentation": {}
+    },
+    {
+        "label": "coeff",
+        "kind": 5,
+        "importPath": "differentiate",
+        "description": "differentiate",
+        "peekOfCode": "coeff = 1\npower = 3\nderivative = differentiate_monomial(coeff, power)\nprint(f\"Derivative of {original_function} is f'(x) = {derivative}\")",
+        "detail": "differentiate",
+        "documentation": {}
+    },
+    {
+        "label": "power",
+        "kind": 5,
+        "importPath": "differentiate",
+        "description": "differentiate",
+        "peekOfCode": "power = 3\nderivative = differentiate_monomial(coeff, power)\nprint(f\"Derivative of {original_function} is f'(x) = {derivative}\")",
+        "detail": "differentiate",
+        "documentation": {}
+    },
+    {
+        "label": "derivative",
+        "kind": 5,
+        "importPath": "differentiate",
+        "description": "differentiate",
+        "peekOfCode": "derivative = differentiate_monomial(coeff, power)\nprint(f\"Derivative of {original_function} is f'(x) = {derivative}\")",
+        "detail": "differentiate",
+        "documentation": {}
+    },
+    {
+        "label": "age_comment",
+        "kind": 2,
+        "importPath": "practical 5",
+        "description": "practical 5",
+        "peekOfCode": "def age_comment(age):\n    if age < 18:\n        return \"You are too young to make a decision on this matter.\"\n    elif 18 <= age < 30:\n        return \"You are in a crucial age to shape your opinions and beliefs.\"\n    elif 30 <= age < 50:\n        return \"You have experienced enough to form informed opinions.\"\n    else:\n        return \"Your wisdom is valuable in understanding complex issues.\"\n# Example usage:",
+        "detail": "practical 5",
+        "documentation": {}
+    },
+    {
+        "label": "lucky_number",
+        "kind": 5,
+        "importPath": "practical 5",
+        "description": "practical 5",
+        "peekOfCode": "lucky_number = int(input(\"Enter your lucky number: \"))\nif lucky_number == 13:\n    print(\"The number 13 is also known as the 'Angel number' in some cultures and symbolize leading with love and compassion like Morena Moshoeshoe did!\")\nelse:\n    print(f\"Your lucky number is {lucky_number}\")\npositive_number = int(input(\"Enter a positive number: \"))\nif positive_number < 10:\n    for _ in range(positive_number):\n        print(\"I will master my Python programming skills\")\nelse:",
+        "detail": "practical 5",
+        "documentation": {}
+    },
+    {
+        "label": "positive_number",
+        "kind": 5,
+        "importPath": "practical 5",
+        "description": "practical 5",
+        "peekOfCode": "positive_number = int(input(\"Enter a positive number: \"))\nif positive_number < 10:\n    for _ in range(positive_number):\n        print(\"I will master my Python programming skills\")\nelse:\n    print(f\"I am too confident to repeat the same thing {positive_number} times\")\n# Part C - Algorithm Implementation\nbelieve_in_rights = input(\"Do you believe in gay rights? (yes/no): \")\nif believe_in_rights.lower() == 'yes':\n    print(\"We’re hopeful that your actions are in alignment!\")",
+        "detail": "practical 5",
+        "documentation": {}
+    },
+    {
+        "label": "believe_in_rights",
+        "kind": 5,
+        "importPath": "practical 5",
+        "description": "practical 5",
+        "peekOfCode": "believe_in_rights = input(\"Do you believe in gay rights? (yes/no): \")\nif believe_in_rights.lower() == 'yes':\n    print(\"We’re hopeful that your actions are in alignment!\")\nelse:\n    assume_exclusion = input(\"Did you assume gay rights excluded the broad LGBTQI community? (yes/no): \")\n    if assume_exclusion.lower() == 'yes':\n        print(\"We apologize for the misunderstanding, all rights matter!\")\n    else:\n        print(\"My, oh my! We hope you’re open to learning and unlearning.\")\ndef age_comment(age):",
+        "detail": "practical 5",
+        "documentation": {}
+    },
+    {
+        "label": "user_age",
+        "kind": 5,
+        "importPath": "practical 5",
+        "description": "practical 5",
+        "peekOfCode": "user_age = int(input(\"Enter your age: \"))\nprint(age_comment(user_age))",
+        "detail": "practical 5",
+        "documentation": {}
+    },
+    {
+        "label": "is_special_num",
+        "kind": 2,
+        "importPath": "practical test 2",
+        "description": "practical test 2",
+        "peekOfCode": "def is_special_num(original_num):\n  \"\"\"The function takes a number and check if it is a special number\n     :param:Original number\n     :returns: special number\n     >>> 89\n     True\n     >>> 98\n     False\n  \"\"\"\n  sums = (original_num // 10) +  (original_num % 10)",
+        "detail": "practical test 2",
+        "documentation": {}
+    },
+    {
+        "label": "lst4",
+        "kind": 5,
+        "importPath": "practical test 2",
+        "description": "practical test 2",
+        "peekOfCode": "lst4 = [3,11,[20,24],200]\nprint(lst4[2] + [lst4[0]])\nimport doctest\nfrom practical8 import print_contacts\ndef is_special_num(original_num):\n  \"\"\"The function takes a number and check if it is a special number\n     :param:Original number\n     :returns: special number\n     >>> 89\n     True",
+        "detail": "practical test 2",
+        "documentation": {}
+    },
+    {
+        "label": "sum_natural_numbers",
+        "kind": 2,
+        "importPath": "practical10",
+        "description": "practical10",
+        "peekOfCode": "def sum_natural_numbers(n):\n    if n == 1:\n        return 1\n    else:\n        return n + sum_natural_numbers(n - 1)\n# Example usage:\nresult = sum_natural_numbers(5)\nprint(\"Sum of natural numbers up to 5:\", result)\n#b) Product of a Number with 4\ndef multiply_by_4(num):",
+        "detail": "practical10",
+        "documentation": {}
+    },
+    {
+        "label": "multiply_by_4",
+        "kind": 2,
+        "importPath": "practical10",
+        "description": "practical10",
+        "peekOfCode": "def multiply_by_4(num):\n    if num == 0:\n        return 0\n    else:\n        return 4 + multiply_by_4(num - 1)\n# Example usage:\nresult = multiply_by_4(5)\nprint(\"Product of 3 with 4:\", result)\n#c) Recursive Division\ndef recursive_division(dividend, divisor):",
+        "detail": "practical10",
+        "documentation": {}
+    },
+    {
+        "label": "recursive_division",
+        "kind": 2,
+        "importPath": "practical10",
+        "description": "practical10",
+        "peekOfCode": "def recursive_division(dividend, divisor):\n    if dividend < divisor:\n        return 0\n    else:\n        return 1 + recursive_division(dividend - divisor, divisor)\n# Example usage:\nresult = recursive_division(10, 3)\nprint(\"10 divided by 3 using recursion:\", result)\n#d) Predicate Function for Even Numbers\ndef is_even(num):",
+        "detail": "practical10",
+        "documentation": {}
+    },
+    {
+        "label": "is_even",
+        "kind": 2,
+        "importPath": "practical10",
+        "description": "practical10",
+        "peekOfCode": "def is_even(num):\n    if num == 0:\n        return True\n    elif num == 1:\n        return False\n    else:\n        return is_even(num - 2)\n# Example usage:\nresult = is_even(6)\nprint(\"Is 6 even?\", result)",
+        "detail": "practical10",
+        "documentation": {}
+    },
+    {
+        "label": "power",
+        "kind": 2,
+        "importPath": "practical10",
+        "description": "practical10",
+        "peekOfCode": "def power(base, exponent):\n    if exponent == 0:\n        return 1\n    else:\n        return base * power(base, exponent - 1)\n# Example usage:\nresult = power(2, 3)\nprint(\"2 raised to the power of 3:\", result)\n#f) Binomial Coefficient Calculation\ndef binomial_coefficient(n, k):",
+        "detail": "practical10",
+        "documentation": {}
+    },
+    {
+        "label": "binomial_coefficient",
+        "kind": 2,
+        "importPath": "practical10",
+        "description": "practical10",
+        "peekOfCode": "def binomial_coefficient(n, k):\n    if k == 0 or k == n:\n        return 1\n    else:\n        return binomial_coefficient(n - 1, k - 1) + binomial_coefficient(n - 1, k)\n# Example usage:\nresult = binomial_coefficient(5, 2)\nprint(\"Binomial coefficient C(5, 2):\", result)\n#g) Sum of a List of Numbers\ndef sum_list_recursive(nums):",
+        "detail": "practical10",
+        "documentation": {}
+    },
+    {
+        "label": "sum_list_recursive",
+        "kind": 2,
+        "importPath": "practical10",
+        "description": "practical10",
+        "peekOfCode": "def sum_list_recursive(nums):\n    if not nums:\n        return 0\n    else:\n        return nums[0] + sum_list_recursive(nums[1:])\n# Example usage:\nnumbers = [1, 2, 3, 4, 5]\nresult = sum_list_recursive(numbers)\nprint(\"Sum of numbers in the list:\", result)\n#h) Number of Digits in a Positive Integer",
+        "detail": "practical10",
+        "documentation": {}
+    },
+    {
+        "label": "count_digits_recursive",
+        "kind": 2,
+        "importPath": "practical10",
+        "description": "practical10",
+        "peekOfCode": "def count_digits_recursive(num):\n    if num < 10:\n        return 1\n    else:\n        return 1 + count_digits_recursive(num // 10)\n# Example usage:\nresult = count_digits_recursive(12345)\nprint(\"Number of digits in 12345:\", result)\n#i) Geometric Sum Calculation\ndef geometric_sum(n):",
+        "detail": "practical10",
+        "documentation": {}
+    },
+    {
+        "label": "geometric_sum",
+        "kind": 2,
+        "importPath": "practical10",
+        "description": "practical10",
+        "peekOfCode": "def geometric_sum(n):\n    if n == 0:\n        return 1\n    else:\n        return 1 / (2 ** n) + geometric_sum(n - 1)\n# Example usage:\nresult = geometric_sum(3)\nprint(\"Geometric sum of 3:\", result)\n#j) Reverse a String using Recursion\ndef reverse_string(s):",
+        "detail": "practical10",
+        "documentation": {}
+    },
+    {
+        "label": "reverse_string",
+        "kind": 2,
+        "importPath": "practical10",
+        "description": "practical10",
+        "peekOfCode": "def reverse_string(s):\n    if len(s) <= 1:\n        return s\n    else:\n        return reverse_string(s[1:]) + s[0]\n# Example usage:\nresult = reverse_string(\"hello\")\nprint(\"Reversed string:\", result)\n#k) Hailstone Sequence\ndef hailstone(n):",
+        "detail": "practical10",
+        "documentation": {}
+    },
+    {
+        "label": "hailstone",
+        "kind": 2,
+        "importPath": "practical10",
+        "description": "practical10",
+        "peekOfCode": "def hailstone(n):\n    print(n, end=\" \")\n    if n == 1:\n        return\n    elif n % 2 == 0:\n        hailstone(n // 2)\n    else:\n        hailstone(3 * n + 1)\n# Example usage:\nhailstone(5)",
+        "detail": "practical10",
+        "documentation": {}
+    },
+    {
+        "label": "sum_digits_until_single",
+        "kind": 2,
+        "importPath": "practical10",
+        "description": "practical10",
+        "peekOfCode": "def sum_digits_until_single(num):\n    if num < 10:\n        return num\n    else:\n        return sum_digits_until_single(sum(int(digit) for digit in str(num)))\n# Example usage:\nresult = sum_digits_until_single(1996)\nprint(\"Sum of digits until single digit:\", result)",
+        "detail": "practical10",
+        "documentation": {}
+    },
+    {
+        "label": "result",
+        "kind": 5,
+        "importPath": "practical10",
+        "description": "practical10",
+        "peekOfCode": "result = sum_natural_numbers(5)\nprint(\"Sum of natural numbers up to 5:\", result)\n#b) Product of a Number with 4\ndef multiply_by_4(num):\n    if num == 0:\n        return 0\n    else:\n        return 4 + multiply_by_4(num - 1)\n# Example usage:\nresult = multiply_by_4(5)",
+        "detail": "practical10",
+        "documentation": {}
+    },
+    {
+        "label": "result",
+        "kind": 5,
+        "importPath": "practical10",
+        "description": "practical10",
+        "peekOfCode": "result = multiply_by_4(5)\nprint(\"Product of 3 with 4:\", result)\n#c) Recursive Division\ndef recursive_division(dividend, divisor):\n    if dividend < divisor:\n        return 0\n    else:\n        return 1 + recursive_division(dividend - divisor, divisor)\n# Example usage:\nresult = recursive_division(10, 3)",
+        "detail": "practical10",
+        "documentation": {}
+    },
+    {
+        "label": "result",
+        "kind": 5,
+        "importPath": "practical10",
+        "description": "practical10",
+        "peekOfCode": "result = recursive_division(10, 3)\nprint(\"10 divided by 3 using recursion:\", result)\n#d) Predicate Function for Even Numbers\ndef is_even(num):\n    if num == 0:\n        return True\n    elif num == 1:\n        return False\n    else:\n        return is_even(num - 2)",
+        "detail": "practical10",
+        "documentation": {}
+    },
+    {
+        "label": "result",
+        "kind": 5,
+        "importPath": "practical10",
+        "description": "practical10",
+        "peekOfCode": "result = is_even(6)\nprint(\"Is 6 even?\", result)\n#e) Power Calculation using Recursion\ndef power(base, exponent):\n    if exponent == 0:\n        return 1\n    else:\n        return base * power(base, exponent - 1)\n# Example usage:\nresult = power(2, 3)",
+        "detail": "practical10",
+        "documentation": {}
+    },
+    {
+        "label": "result",
+        "kind": 5,
+        "importPath": "practical10",
+        "description": "practical10",
+        "peekOfCode": "result = power(2, 3)\nprint(\"2 raised to the power of 3:\", result)\n#f) Binomial Coefficient Calculation\ndef binomial_coefficient(n, k):\n    if k == 0 or k == n:\n        return 1\n    else:\n        return binomial_coefficient(n - 1, k - 1) + binomial_coefficient(n - 1, k)\n# Example usage:\nresult = binomial_coefficient(5, 2)",
+        "detail": "practical10",
+        "documentation": {}
+    },
+    {
+        "label": "result",
+        "kind": 5,
+        "importPath": "practical10",
+        "description": "practical10",
+        "peekOfCode": "result = binomial_coefficient(5, 2)\nprint(\"Binomial coefficient C(5, 2):\", result)\n#g) Sum of a List of Numbers\ndef sum_list_recursive(nums):\n    if not nums:\n        return 0\n    else:\n        return nums[0] + sum_list_recursive(nums[1:])\n# Example usage:\nnumbers = [1, 2, 3, 4, 5]",
+        "detail": "practical10",
+        "documentation": {}
+    },
+    {
+        "label": "numbers",
+        "kind": 5,
+        "importPath": "practical10",
+        "description": "practical10",
+        "peekOfCode": "numbers = [1, 2, 3, 4, 5]\nresult = sum_list_recursive(numbers)\nprint(\"Sum of numbers in the list:\", result)\n#h) Number of Digits in a Positive Integer\ndef count_digits_recursive(num):\n    if num < 10:\n        return 1\n    else:\n        return 1 + count_digits_recursive(num // 10)\n# Example usage:",
+        "detail": "practical10",
+        "documentation": {}
+    },
+    {
+        "label": "result",
+        "kind": 5,
+        "importPath": "practical10",
+        "description": "practical10",
+        "peekOfCode": "result = sum_list_recursive(numbers)\nprint(\"Sum of numbers in the list:\", result)\n#h) Number of Digits in a Positive Integer\ndef count_digits_recursive(num):\n    if num < 10:\n        return 1\n    else:\n        return 1 + count_digits_recursive(num // 10)\n# Example usage:\nresult = count_digits_recursive(12345)",
+        "detail": "practical10",
+        "documentation": {}
+    },
+    {
+        "label": "result",
+        "kind": 5,
+        "importPath": "practical10",
+        "description": "practical10",
+        "peekOfCode": "result = count_digits_recursive(12345)\nprint(\"Number of digits in 12345:\", result)\n#i) Geometric Sum Calculation\ndef geometric_sum(n):\n    if n == 0:\n        return 1\n    else:\n        return 1 / (2 ** n) + geometric_sum(n - 1)\n# Example usage:\nresult = geometric_sum(3)",
+        "detail": "practical10",
+        "documentation": {}
+    },
+    {
+        "label": "result",
+        "kind": 5,
+        "importPath": "practical10",
+        "description": "practical10",
+        "peekOfCode": "result = geometric_sum(3)\nprint(\"Geometric sum of 3:\", result)\n#j) Reverse a String using Recursion\ndef reverse_string(s):\n    if len(s) <= 1:\n        return s\n    else:\n        return reverse_string(s[1:]) + s[0]\n# Example usage:\nresult = reverse_string(\"hello\")",
+        "detail": "practical10",
+        "documentation": {}
+    },
+    {
+        "label": "result",
+        "kind": 5,
+        "importPath": "practical10",
+        "description": "practical10",
+        "peekOfCode": "result = reverse_string(\"hello\")\nprint(\"Reversed string:\", result)\n#k) Hailstone Sequence\ndef hailstone(n):\n    print(n, end=\" \")\n    if n == 1:\n        return\n    elif n % 2 == 0:\n        hailstone(n // 2)\n    else:",
+        "detail": "practical10",
+        "documentation": {}
+    },
+    {
+        "label": "result",
+        "kind": 5,
+        "importPath": "practical10",
+        "description": "practical10",
+        "peekOfCode": "result = sum_digits_until_single(1996)\nprint(\"Sum of digits until single digit:\", result)",
+        "detail": "practical10",
+        "documentation": {}
+    },
+    {
+        "label": "sum",
+        "kind": 5,
+        "importPath": "practical4",
+        "description": "practical4",
+        "peekOfCode": "sum = num_1 + num_2\nproduct = num_1 * num_2\nprint(sum)\nprint(product)\n#A program that computes the area of a circle based on the radius from the user\nradius = int(input(\"Enter a radius: \"))\nArea_of_the_circle = ( round(math.pi,2)* radius**2)\nprint(Area_of_the_circle)\n#A program that asks the user for a positive integer less than 100. Your program must then provide the user with the product of 7 and the last digit of the entered integer.\npos_int =int(input(\"Enter a positive integer: \"))",
+        "detail": "practical4",
+        "documentation": {}
+    },
+    {
+        "label": "product",
+        "kind": 5,
+        "importPath": "practical4",
+        "description": "practical4",
+        "peekOfCode": "product = num_1 * num_2\nprint(sum)\nprint(product)\n#A program that computes the area of a circle based on the radius from the user\nradius = int(input(\"Enter a radius: \"))\nArea_of_the_circle = ( round(math.pi,2)* radius**2)\nprint(Area_of_the_circle)\n#A program that asks the user for a positive integer less than 100. Your program must then provide the user with the product of 7 and the last digit of the entered integer.\npos_int =int(input(\"Enter a positive integer: \"))\nif pos_int < 100 and pos_int % 7 == 0:print(pos_int) ",
+        "detail": "practical4",
+        "documentation": {}
+    },
+    {
+        "label": "radius",
+        "kind": 5,
+        "importPath": "practical4",
+        "description": "practical4",
+        "peekOfCode": "radius = int(input(\"Enter a radius: \"))\nArea_of_the_circle = ( round(math.pi,2)* radius**2)\nprint(Area_of_the_circle)\n#A program that asks the user for a positive integer less than 100. Your program must then provide the user with the product of 7 and the last digit of the entered integer.\npos_int =int(input(\"Enter a positive integer: \"))\nif pos_int < 100 and pos_int % 7 == 0:print(pos_int) \nlast_digit = pos_int % 10  \nprint(last_digit)\n#Your program must ask the user the amount to convert and return the converted amount formatted as expected in two decimal places.\nLesotho_currency = 1.34",
+        "detail": "practical4",
+        "documentation": {}
+    },
+    {
+        "label": "Area_of_the_circle",
+        "kind": 5,
+        "importPath": "practical4",
+        "description": "practical4",
+        "peekOfCode": "Area_of_the_circle = ( round(math.pi,2)* radius**2)\nprint(Area_of_the_circle)\n#A program that asks the user for a positive integer less than 100. Your program must then provide the user with the product of 7 and the last digit of the entered integer.\npos_int =int(input(\"Enter a positive integer: \"))\nif pos_int < 100 and pos_int % 7 == 0:print(pos_int) \nlast_digit = pos_int % 10  \nprint(last_digit)\n#Your program must ask the user the amount to convert and return the converted amount formatted as expected in two decimal places.\nLesotho_currency = 1.34\nBotswana_currency = 1",
+        "detail": "practical4",
+        "documentation": {}
+    },
+    {
+        "label": "last_digit",
+        "kind": 5,
+        "importPath": "practical4",
+        "description": "practical4",
+        "peekOfCode": "last_digit = pos_int % 10  \nprint(last_digit)\n#Your program must ask the user the amount to convert and return the converted amount formatted as expected in two decimal places.\nLesotho_currency = 1.34\nBotswana_currency = 1\namount_Maloti =float(input(\"Enter an amount in Maloti: \")) * Botswana_currency\namount_pula = float(input(\"Enter an amount in Pula: \")) * Lesotho_currency\nprint(amount_Maloti)\nprint(amount_pula)\n#A program that reads a positive integer, n, from the user and then displays the sum of all of the integers from 1 to n.",
+        "detail": "practical4",
+        "documentation": {}
+    },
+    {
+        "label": "Lesotho_currency",
+        "kind": 5,
+        "importPath": "practical4",
+        "description": "practical4",
+        "peekOfCode": "Lesotho_currency = 1.34\nBotswana_currency = 1\namount_Maloti =float(input(\"Enter an amount in Maloti: \")) * Botswana_currency\namount_pula = float(input(\"Enter an amount in Pula: \")) * Lesotho_currency\nprint(amount_Maloti)\nprint(amount_pula)\n#A program that reads a positive integer, n, from the user and then displays the sum of all of the integers from 1 to n.\nn = int(input(\"Enter a positive integer: \"))\nsum = 0\nfor i in range(n):",
+        "detail": "practical4",
+        "documentation": {}
+    },
+    {
+        "label": "Botswana_currency",
+        "kind": 5,
+        "importPath": "practical4",
+        "description": "practical4",
+        "peekOfCode": "Botswana_currency = 1\namount_Maloti =float(input(\"Enter an amount in Maloti: \")) * Botswana_currency\namount_pula = float(input(\"Enter an amount in Pula: \")) * Lesotho_currency\nprint(amount_Maloti)\nprint(amount_pula)\n#A program that reads a positive integer, n, from the user and then displays the sum of all of the integers from 1 to n.\nn = int(input(\"Enter a positive integer: \"))\nsum = 0\nfor i in range(n):\n  sum += 1",
+        "detail": "practical4",
+        "documentation": {}
+    },
+    {
+        "label": "amount_pula",
+        "kind": 5,
+        "importPath": "practical4",
+        "description": "practical4",
+        "peekOfCode": "amount_pula = float(input(\"Enter an amount in Pula: \")) * Lesotho_currency\nprint(amount_Maloti)\nprint(amount_pula)\n#A program that reads a positive integer, n, from the user and then displays the sum of all of the integers from 1 to n.\nn = int(input(\"Enter a positive integer: \"))\nsum = 0\nfor i in range(n):\n  sum += 1\n  print(sum)\ncoursework_mark = input(\"Enter your coursework mark: \")",
+        "detail": "practical4",
+        "documentation": {}
+    },
+    {
+        "label": "n",
+        "kind": 5,
+        "importPath": "practical4",
+        "description": "practical4",
+        "peekOfCode": "n = int(input(\"Enter a positive integer: \"))\nsum = 0\nfor i in range(n):\n  sum += 1\n  print(sum)\ncoursework_mark = input(\"Enter your coursework mark: \")\npart_of_the_final_mark = coursework_mark * (40/100)\n# Prompting the user for input\nn = int(input(\"Enter an integer value for n: \"))\n# Computing the value nnn-nn-n and displaying it",
+        "detail": "practical4",
+        "documentation": {}
+    },
+    {
+        "label": "sum",
+        "kind": 5,
+        "importPath": "practical4",
+        "description": "practical4",
+        "peekOfCode": "sum = 0\nfor i in range(n):\n  sum += 1\n  print(sum)\ncoursework_mark = input(\"Enter your coursework mark: \")\npart_of_the_final_mark = coursework_mark * (40/100)\n# Prompting the user for input\nn = int(input(\"Enter an integer value for n: \"))\n# Computing the value nnn-nn-n and displaying it\nresult = n * 100 + n * 10 + n - (n * 10 + n)",
+        "detail": "practical4",
+        "documentation": {}
+    },
+    {
+        "label": "coursework_mark",
+        "kind": 5,
+        "importPath": "practical4",
+        "description": "practical4",
+        "peekOfCode": "coursework_mark = input(\"Enter your coursework mark: \")\npart_of_the_final_mark = coursework_mark * (40/100)\n# Prompting the user for input\nn = int(input(\"Enter an integer value for n: \"))\n# Computing the value nnn-nn-n and displaying it\nresult = n * 100 + n * 10 + n - (n * 10 + n)\nprint(f\"The result of {n}{n}{n}-{n}{n}-{n} is {result}\")\n# Prompting the user for input\nname = input(\"Enter your name: \")\nage = int(input(\"Enter your age: \"))",
+        "detail": "practical4",
+        "documentation": {}
+    },
+    {
+        "label": "part_of_the_final_mark",
+        "kind": 5,
+        "importPath": "practical4",
+        "description": "practical4",
+        "peekOfCode": "part_of_the_final_mark = coursework_mark * (40/100)\n# Prompting the user for input\nn = int(input(\"Enter an integer value for n: \"))\n# Computing the value nnn-nn-n and displaying it\nresult = n * 100 + n * 10 + n - (n * 10 + n)\nprint(f\"The result of {n}{n}{n}-{n}{n}-{n} is {result}\")\n# Prompting the user for input\nname = input(\"Enter your name: \")\nage = int(input(\"Enter your age: \"))\n# Calculating the years until turning 70 and displaying the message",
+        "detail": "practical4",
+        "documentation": {}
+    },
+    {
+        "label": "n",
+        "kind": 5,
+        "importPath": "practical4",
+        "description": "practical4",
+        "peekOfCode": "n = int(input(\"Enter an integer value for n: \"))\n# Computing the value nnn-nn-n and displaying it\nresult = n * 100 + n * 10 + n - (n * 10 + n)\nprint(f\"The result of {n}{n}{n}-{n}{n}-{n} is {result}\")\n# Prompting the user for input\nname = input(\"Enter your name: \")\nage = int(input(\"Enter your age: \"))\n# Calculating the years until turning 70 and displaying the message\nyears_until_70 = 70 - age\nprint(f\"{name}, you will be turning 70 in {years_until_70} years.\")",
+        "detail": "practical4",
+        "documentation": {}
+    },
+    {
+        "label": "result",
+        "kind": 5,
+        "importPath": "practical4",
+        "description": "practical4",
+        "peekOfCode": "result = n * 100 + n * 10 + n - (n * 10 + n)\nprint(f\"The result of {n}{n}{n}-{n}{n}-{n} is {result}\")\n# Prompting the user for input\nname = input(\"Enter your name: \")\nage = int(input(\"Enter your age: \"))\n# Calculating the years until turning 70 and displaying the message\nyears_until_70 = 70 - age\nprint(f\"{name}, you will be turning 70 in {years_until_70} years.\")\n# Prompting the user for input\nname = input(\"Enter your name: \")",
+        "detail": "practical4",
+        "documentation": {}
+    },
+    {
+        "label": "name",
+        "kind": 5,
+        "importPath": "practical4",
+        "description": "practical4",
+        "peekOfCode": "name = input(\"Enter your name: \")\nage = int(input(\"Enter your age: \"))\n# Calculating the years until turning 70 and displaying the message\nyears_until_70 = 70 - age\nprint(f\"{name}, you will be turning 70 in {years_until_70} years.\")\n# Prompting the user for input\nname = input(\"Enter your name: \")\nage = int(input(\"Enter your age: \"))\ncurrent_year = int(input(\"Enter the current year: \"))\n# Calculating the year of turning 70 and displaying the message",
+        "detail": "practical4",
+        "documentation": {}
+    },
+    {
+        "label": "age",
+        "kind": 5,
+        "importPath": "practical4",
+        "description": "practical4",
+        "peekOfCode": "age = int(input(\"Enter your age: \"))\n# Calculating the years until turning 70 and displaying the message\nyears_until_70 = 70 - age\nprint(f\"{name}, you will be turning 70 in {years_until_70} years.\")\n# Prompting the user for input\nname = input(\"Enter your name: \")\nage = int(input(\"Enter your age: \"))\ncurrent_year = int(input(\"Enter the current year: \"))\n# Calculating the year of turning 70 and displaying the message\nyear_turning_70 = current_year + (70 - age)",
+        "detail": "practical4",
+        "documentation": {}
+    },
+    {
+        "label": "years_until_70",
+        "kind": 5,
+        "importPath": "practical4",
+        "description": "practical4",
+        "peekOfCode": "years_until_70 = 70 - age\nprint(f\"{name}, you will be turning 70 in {years_until_70} years.\")\n# Prompting the user for input\nname = input(\"Enter your name: \")\nage = int(input(\"Enter your age: \"))\ncurrent_year = int(input(\"Enter the current year: \"))\n# Calculating the year of turning 70 and displaying the message\nyear_turning_70 = current_year + (70 - age)\nprint(f\"{name}, you will be reaching 70 i.e. 'lilemo tsa pallo' in the year {year_turning_70}\")\n# Prompting the user for input",
+        "detail": "practical4",
+        "documentation": {}
+    },
+    {
+        "label": "name",
+        "kind": 5,
+        "importPath": "practical4",
+        "description": "practical4",
+        "peekOfCode": "name = input(\"Enter your name: \")\nage = int(input(\"Enter your age: \"))\ncurrent_year = int(input(\"Enter the current year: \"))\n# Calculating the year of turning 70 and displaying the message\nyear_turning_70 = current_year + (70 - age)\nprint(f\"{name}, you will be reaching 70 i.e. 'lilemo tsa pallo' in the year {year_turning_70}\")\n# Prompting the user for input\nname = input(\"Enter your name: \")\nage = int(input(\"Enter your age: \"))\ncurrent_year = int(input(\"Enter the current year: \"))",
+        "detail": "practical4",
+        "documentation": {}
+    },
+    {
+        "label": "age",
+        "kind": 5,
+        "importPath": "practical4",
+        "description": "practical4",
+        "peekOfCode": "age = int(input(\"Enter your age: \"))\ncurrent_year = int(input(\"Enter the current year: \"))\n# Calculating the year of turning 70 and displaying the message\nyear_turning_70 = current_year + (70 - age)\nprint(f\"{name}, you will be reaching 70 i.e. 'lilemo tsa pallo' in the year {year_turning_70}\")\n# Prompting the user for input\nname = input(\"Enter your name: \")\nage = int(input(\"Enter your age: \"))\ncurrent_year = int(input(\"Enter the current year: \"))\nrepeat_times = int(input(\"How many times do you want to print the message? \"))",
+        "detail": "practical4",
+        "documentation": {}
+    },
+    {
+        "label": "current_year",
+        "kind": 5,
+        "importPath": "practical4",
+        "description": "practical4",
+        "peekOfCode": "current_year = int(input(\"Enter the current year: \"))\n# Calculating the year of turning 70 and displaying the message\nyear_turning_70 = current_year + (70 - age)\nprint(f\"{name}, you will be reaching 70 i.e. 'lilemo tsa pallo' in the year {year_turning_70}\")\n# Prompting the user for input\nname = input(\"Enter your name: \")\nage = int(input(\"Enter your age: \"))\ncurrent_year = int(input(\"Enter the current year: \"))\nrepeat_times = int(input(\"How many times do you want to print the message? \"))\n# Calculating the year of turning 70 and printing the message multiple times",
+        "detail": "practical4",
+        "documentation": {}
+    },
+    {
+        "label": "year_turning_70",
+        "kind": 5,
+        "importPath": "practical4",
+        "description": "practical4",
+        "peekOfCode": "year_turning_70 = current_year + (70 - age)\nprint(f\"{name}, you will be reaching 70 i.e. 'lilemo tsa pallo' in the year {year_turning_70}\")\n# Prompting the user for input\nname = input(\"Enter your name: \")\nage = int(input(\"Enter your age: \"))\ncurrent_year = int(input(\"Enter the current year: \"))\nrepeat_times = int(input(\"How many times do you want to print the message? \"))\n# Calculating the year of turning 70 and printing the message multiple times\nyear_turning_70 = current_year + (70 - age)\nmessage = f\"{name}, you will be reaching 70 i.e. 'lilemo tsa pallo' in the year {year_turning_70}\\n\"",
+        "detail": "practical4",
+        "documentation": {}
+    },
+    {
+        "label": "name",
+        "kind": 5,
+        "importPath": "practical4",
+        "description": "practical4",
+        "peekOfCode": "name = input(\"Enter your name: \")\nage = int(input(\"Enter your age: \"))\ncurrent_year = int(input(\"Enter the current year: \"))\nrepeat_times = int(input(\"How many times do you want to print the message? \"))\n# Calculating the year of turning 70 and printing the message multiple times\nyear_turning_70 = current_year + (70 - age)\nmessage = f\"{name}, you will be reaching 70 i.e. 'lilemo tsa pallo' in the year {year_turning_70}\\n\"\nprint(message * repeat_times)",
+        "detail": "practical4",
+        "documentation": {}
+    },
+    {
+        "label": "age",
+        "kind": 5,
+        "importPath": "practical4",
+        "description": "practical4",
+        "peekOfCode": "age = int(input(\"Enter your age: \"))\ncurrent_year = int(input(\"Enter the current year: \"))\nrepeat_times = int(input(\"How many times do you want to print the message? \"))\n# Calculating the year of turning 70 and printing the message multiple times\nyear_turning_70 = current_year + (70 - age)\nmessage = f\"{name}, you will be reaching 70 i.e. 'lilemo tsa pallo' in the year {year_turning_70}\\n\"\nprint(message * repeat_times)",
+        "detail": "practical4",
+        "documentation": {}
+    },
+    {
+        "label": "current_year",
+        "kind": 5,
+        "importPath": "practical4",
+        "description": "practical4",
+        "peekOfCode": "current_year = int(input(\"Enter the current year: \"))\nrepeat_times = int(input(\"How many times do you want to print the message? \"))\n# Calculating the year of turning 70 and printing the message multiple times\nyear_turning_70 = current_year + (70 - age)\nmessage = f\"{name}, you will be reaching 70 i.e. 'lilemo tsa pallo' in the year {year_turning_70}\\n\"\nprint(message * repeat_times)",
+        "detail": "practical4",
+        "documentation": {}
+    },
+    {
+        "label": "repeat_times",
+        "kind": 5,
+        "importPath": "practical4",
+        "description": "practical4",
+        "peekOfCode": "repeat_times = int(input(\"How many times do you want to print the message? \"))\n# Calculating the year of turning 70 and printing the message multiple times\nyear_turning_70 = current_year + (70 - age)\nmessage = f\"{name}, you will be reaching 70 i.e. 'lilemo tsa pallo' in the year {year_turning_70}\\n\"\nprint(message * repeat_times)",
+        "detail": "practical4",
+        "documentation": {}
+    },
+    {
+        "label": "year_turning_70",
+        "kind": 5,
+        "importPath": "practical4",
+        "description": "practical4",
+        "peekOfCode": "year_turning_70 = current_year + (70 - age)\nmessage = f\"{name}, you will be reaching 70 i.e. 'lilemo tsa pallo' in the year {year_turning_70}\\n\"\nprint(message * repeat_times)",
+        "detail": "practical4",
+        "documentation": {}
+    },
+    {
+        "label": "message",
+        "kind": 5,
+        "importPath": "practical4",
+        "description": "practical4",
+        "peekOfCode": "message = f\"{name}, you will be reaching 70 i.e. 'lilemo tsa pallo' in the year {year_turning_70}\\n\"\nprint(message * repeat_times)",
+        "detail": "practical4",
+        "documentation": {}
+    },
+    {
+        "label": "evaluate_threat",
+        "kind": 2,
+        "importPath": "practical6",
+        "description": "practical6",
+        "peekOfCode": "def evaluate_threat(threat):\n    if \"threatening\" in threat and \"bigger than you\" in threat:\n        return \"Flee\"\n    elif \"weaker\" in threat:\n        if \"sick\" in threat:\n            return \"Leave it alone\"\n        elif any(keyword in threat for keyword in [\"quills\", \"poison\", \"fangs\", \"razor claws\"]):\n            return \"Back up and go in the other direction\"\n        elif \"smells nice\" in threat and \"metal jaws\" in threat:\n            return \"Walk on by\"",
+        "detail": "practical6",
+        "documentation": {}
+    },
+    {
+        "label": "holidays",
+        "kind": 5,
+        "importPath": "practical6",
+        "description": "practical6",
+        "peekOfCode": "holidays = {\n    \"March 11\": \"Moshoeshoe’s Day - This is a day we commemorate Morena Moshoeshoe for his legacy of peace. Coincidentally, he passed away on this day.\",\n    \"October 4\": \"Independence Day - This day marks our attainment of sovereignty to fully embody the ideals of ‘seMoshoshoe’.\"\n}\n# Prompt the user for input\nmonth = input(\"Enter the month (e.g. March): \")\nday = input(\"Enter the day (e.g. 11): \")\n# Check if the entered date is a holiday or not\nentered_date = f\"{month} {day}\"\nif entered_date in holidays:",
+        "detail": "practical6",
+        "documentation": {}
+    },
+    {
+        "label": "month",
+        "kind": 5,
+        "importPath": "practical6",
+        "description": "practical6",
+        "peekOfCode": "month = input(\"Enter the month (e.g. March): \")\nday = input(\"Enter the day (e.g. 11): \")\n# Check if the entered date is a holiday or not\nentered_date = f\"{month} {day}\"\nif entered_date in holidays:\n    print(holidays[entered_date])\nelse:\n    print(f\"{entered_date} - This day, or indeed any other, presents an opportune moment to contemplate what actions Morena Moshoeshoe would undertake in order to promote the values of peace and love.\")\n# a) Positive integers less than 200 which are even and divisible by 5\nfor num in range(200):",
+        "detail": "practical6",
+        "documentation": {}
+    },
+    {
+        "label": "day",
+        "kind": 5,
+        "importPath": "practical6",
+        "description": "practical6",
+        "peekOfCode": "day = input(\"Enter the day (e.g. 11): \")\n# Check if the entered date is a holiday or not\nentered_date = f\"{month} {day}\"\nif entered_date in holidays:\n    print(holidays[entered_date])\nelse:\n    print(f\"{entered_date} - This day, or indeed any other, presents an opportune moment to contemplate what actions Morena Moshoeshoe would undertake in order to promote the values of peace and love.\")\n# a) Positive integers less than 200 which are even and divisible by 5\nfor num in range(200):\n    if num % 2 == 0 and num % 5 == 0:",
+        "detail": "practical6",
+        "documentation": {}
+    },
+    {
+        "label": "entered_date",
+        "kind": 5,
+        "importPath": "practical6",
+        "description": "practical6",
+        "peekOfCode": "entered_date = f\"{month} {day}\"\nif entered_date in holidays:\n    print(holidays[entered_date])\nelse:\n    print(f\"{entered_date} - This day, or indeed any other, presents an opportune moment to contemplate what actions Morena Moshoeshoe would undertake in order to promote the values of peace and love.\")\n# a) Positive integers less than 200 which are even and divisible by 5\nfor num in range(200):\n    if num % 2 == 0 and num % 5 == 0:\n        print(num)\n# b) Count the number 4 in any given list",
+        "detail": "practical6",
+        "documentation": {}
+    },
+    {
+        "label": "list1",
+        "kind": 5,
+        "importPath": "practical6",
+        "description": "practical6",
+        "peekOfCode": "list1 = [1, 2, 3, 4, 5, 4, 6, 4, 7]\ncount_4 = list1.count(4)\nprint(f\"Number of 4s in the list: {count_4}\")\n# c) Sum of numbers in a list less than a certain threshold\ngiven_list = [10, 20, 30, 40, 50, 60]\nthreshold = 40\nsum_below_threshold = sum(num for num in given_list if num < threshold)\nprint(f\"Sum of numbers below {threshold} in the list: {sum_below_threshold}\")\n# d) Generate a list of numbers divisible by 7 and multiple of 20 between 1500 and 2700\ndivisible_by_7_and_20 = [num for num in range(1500, 2701) if num % 7 == 0 and num % 20 == 0]",
+        "detail": "practical6",
+        "documentation": {}
+    },
+    {
+        "label": "count_4",
+        "kind": 5,
+        "importPath": "practical6",
+        "description": "practical6",
+        "peekOfCode": "count_4 = list1.count(4)\nprint(f\"Number of 4s in the list: {count_4}\")\n# c) Sum of numbers in a list less than a certain threshold\ngiven_list = [10, 20, 30, 40, 50, 60]\nthreshold = 40\nsum_below_threshold = sum(num for num in given_list if num < threshold)\nprint(f\"Sum of numbers below {threshold} in the list: {sum_below_threshold}\")\n# d) Generate a list of numbers divisible by 7 and multiple of 20 between 1500 and 2700\ndivisible_by_7_and_20 = [num for num in range(1500, 2701) if num % 7 == 0 and num % 20 == 0]\nprint(\"Numbers divisible by 7 and multiple of 20 between 1500 and 2700:\")",
+        "detail": "practical6",
+        "documentation": {}
+    },
+    {
+        "label": "given_list",
+        "kind": 5,
+        "importPath": "practical6",
+        "description": "practical6",
+        "peekOfCode": "given_list = [10, 20, 30, 40, 50, 60]\nthreshold = 40\nsum_below_threshold = sum(num for num in given_list if num < threshold)\nprint(f\"Sum of numbers below {threshold} in the list: {sum_below_threshold}\")\n# d) Generate a list of numbers divisible by 7 and multiple of 20 between 1500 and 2700\ndivisible_by_7_and_20 = [num for num in range(1500, 2701) if num % 7 == 0 and num % 20 == 0]\nprint(\"Numbers divisible by 7 and multiple of 20 between 1500 and 2700:\")\nprint(divisible_by_7_and_20)\n# e) Generate all verses of \"99 Bottles of Beer\" song\nfor bottles in range(99, 0, -1):",
+        "detail": "practical6",
+        "documentation": {}
+    },
+    {
+        "label": "threshold",
+        "kind": 5,
+        "importPath": "practical6",
+        "description": "practical6",
+        "peekOfCode": "threshold = 40\nsum_below_threshold = sum(num for num in given_list if num < threshold)\nprint(f\"Sum of numbers below {threshold} in the list: {sum_below_threshold}\")\n# d) Generate a list of numbers divisible by 7 and multiple of 20 between 1500 and 2700\ndivisible_by_7_and_20 = [num for num in range(1500, 2701) if num % 7 == 0 and num % 20 == 0]\nprint(\"Numbers divisible by 7 and multiple of 20 between 1500 and 2700:\")\nprint(divisible_by_7_and_20)\n# e) Generate all verses of \"99 Bottles of Beer\" song\nfor bottles in range(99, 0, -1):\n    print(f\"{bottles} bottles of beer on the wall, {bottles} bottles of beer.\")",
+        "detail": "practical6",
+        "documentation": {}
+    },
+    {
+        "label": "sum_below_threshold",
+        "kind": 5,
+        "importPath": "practical6",
+        "description": "practical6",
+        "peekOfCode": "sum_below_threshold = sum(num for num in given_list if num < threshold)\nprint(f\"Sum of numbers below {threshold} in the list: {sum_below_threshold}\")\n# d) Generate a list of numbers divisible by 7 and multiple of 20 between 1500 and 2700\ndivisible_by_7_and_20 = [num for num in range(1500, 2701) if num % 7 == 0 and num % 20 == 0]\nprint(\"Numbers divisible by 7 and multiple of 20 between 1500 and 2700:\")\nprint(divisible_by_7_and_20)\n# e) Generate all verses of \"99 Bottles of Beer\" song\nfor bottles in range(99, 0, -1):\n    print(f\"{bottles} bottles of beer on the wall, {bottles} bottles of beer.\")\n    print(f\"Take one down and pass it around, {bottles - 1} bottles of beer on the wall.\\n\")",
+        "detail": "practical6",
+        "documentation": {}
+    },
+    {
+        "label": "divisible_by_7_and_20",
+        "kind": 5,
+        "importPath": "practical6",
+        "description": "practical6",
+        "peekOfCode": "divisible_by_7_and_20 = [num for num in range(1500, 2701) if num % 7 == 0 and num % 20 == 0]\nprint(\"Numbers divisible by 7 and multiple of 20 between 1500 and 2700:\")\nprint(divisible_by_7_and_20)\n# e) Generate all verses of \"99 Bottles of Beer\" song\nfor bottles in range(99, 0, -1):\n    print(f\"{bottles} bottles of beer on the wall, {bottles} bottles of beer.\")\n    print(f\"Take one down and pass it around, {bottles - 1} bottles of beer on the wall.\\n\")\nprint(\"No more bottles of beer on the wall, no more bottles of beer. Go to the store and buy some more!\")\ndef evaluate_threat(threat):\n    if \"threatening\" in threat and \"bigger than you\" in threat:",
+        "detail": "practical6",
+        "documentation": {}
+    },
+    {
+        "label": "threat_description",
+        "kind": 5,
+        "importPath": "practical6",
+        "description": "practical6",
+        "peekOfCode": "threat_description = \"threatening and bigger than you\"\naction = evaluate_threat(threat_description)\nprint(f\"Action to take: {action}\")",
+        "detail": "practical6",
+        "documentation": {}
+    },
+    {
+        "label": "action",
+        "kind": 5,
+        "importPath": "practical6",
+        "description": "practical6",
+        "peekOfCode": "action = evaluate_threat(threat_description)\nprint(f\"Action to take: {action}\")",
+        "detail": "practical6",
+        "documentation": {}
+    },
+    {
+        "label": "student_results",
+        "kind": 2,
+        "importPath": "practical8",
+        "description": "practical8",
+        "peekOfCode": "def student_results(subjects, marks):\n    \"\"\"\n    Print subject marks and pass/fail status for each subject.\n    Parameters:\n    subjects (list): List of subject names.\n    marks (list): List of corresponding marks for each subject.\n    Returns:\n    int: Number of subjects passed.\n    \"\"\"\n    passed_subjects = 0",
+        "detail": "practical8",
+        "documentation": {}
+    },
+    {
+        "label": "convert_currency",
+        "kind": 2,
+        "importPath": "practical8",
+        "description": "practical8",
+        "peekOfCode": "def convert_currency(values, exchange_rate):\n    \"\"\"\n    Convert values into another currency based on exchange rate.\n    Parameters:\n    values (list): List of values to be converted.\n    exchange_rate (float): Exchange rate for conversion.\n    Returns:\n    list: List of converted values rounded to 2 decimal places.\n    \"\"\"\n    converted_values = [round(value * exchange_rate, 2) for value in values]",
+        "detail": "practical8",
+        "documentation": {}
+    },
+    {
+        "label": "last_element_is_even",
+        "kind": 2,
+        "importPath": "practical8",
+        "description": "practical8",
+        "peekOfCode": "def last_element_is_even(t):\n    \"\"\"\n    Check if the last element of a tuple is even.\n    Parameters:\n    t (tuple): Input tuple.\n    Returns:\n    bool: True if last element is even, False otherwise.\n    \"\"\"\n    return t[-1] % 2 == 0\n# Example usage:",
+        "detail": "practical8",
+        "documentation": {}
+    },
+    {
+        "label": "best_mark",
+        "kind": 2,
+        "importPath": "practical8",
+        "description": "practical8",
+        "peekOfCode": "def best_mark(t):\n    \"\"\"\n    Get the name and best mark from a tuple of name followed by marks.\n    Parameters:\n    t (tuple): Tuple containing name followed by marks.\n    Returns:\n    tuple: Tuple with name and best mark.\n    \"\"\"\n    name = t[0]\n    marks = t[1:]",
+        "detail": "practical8",
+        "documentation": {}
+    },
+    {
+        "label": "adjust_word_length",
+        "kind": 2,
+        "importPath": "practical8",
+        "description": "practical8",
+        "peekOfCode": "def adjust_word_length(word, length):\n    \"\"\"\n    Adjust the length of a word based on the required length.\n    Parameters:\n    word (str): Input word.\n    length (int): Required length.\n    Returns:\n    str: Adjusted word.\n    \"\"\"\n    if len(word) == length:",
+        "detail": "practical8",
+        "documentation": {}
+    },
+    {
+        "label": "print_contacts",
+        "kind": 2,
+        "importPath": "practical8",
+        "description": "practical8",
+        "peekOfCode": "def print_contacts(names, contacts_dict):\n    \"\"\"\n    Print names and corresponding contact numbers.\n    Parameters:\n    names (list): List of names.\n    contacts_dict (dict): Dictionary of contacts.\n    \"\"\"\n    for name in names:\n        if name in contacts_dict:\n            print(f\"{name} can be contacted at {contacts_dict[name]}\")",
+        "detail": "practical8",
+        "documentation": {}
+    },
+    {
+        "label": "original_values",
+        "kind": 5,
+        "importPath": "practical8",
+        "description": "practical8",
+        "peekOfCode": "original_values = [100, 200, 300]\nexchange_rate = 0.75\nconverted_values = convert_currency(original_values, exchange_rate)\nprint(converted_values)\n#c) Triangular Numbers List Comprehension\nimport random\nrandom_numbers = random.sample(range(1, 200), 50)\ntriangular_numbers = [num for num in random_numbers if (8 * num + 1) % 2 == 1 and (8 * num + 1) ** 0.5 % 1 == 0]\nprint(triangular_numbers)\n#a) Determine if Last Element of Tuple is Even",
+        "detail": "practical8",
+        "documentation": {}
+    },
+    {
+        "label": "exchange_rate",
+        "kind": 5,
+        "importPath": "practical8",
+        "description": "practical8",
+        "peekOfCode": "exchange_rate = 0.75\nconverted_values = convert_currency(original_values, exchange_rate)\nprint(converted_values)\n#c) Triangular Numbers List Comprehension\nimport random\nrandom_numbers = random.sample(range(1, 200), 50)\ntriangular_numbers = [num for num in random_numbers if (8 * num + 1) % 2 == 1 and (8 * num + 1) ** 0.5 % 1 == 0]\nprint(triangular_numbers)\n#a) Determine if Last Element of Tuple is Even\ndef last_element_is_even(t):",
+        "detail": "practical8",
+        "documentation": {}
+    },
+    {
+        "label": "converted_values",
+        "kind": 5,
+        "importPath": "practical8",
+        "description": "practical8",
+        "peekOfCode": "converted_values = convert_currency(original_values, exchange_rate)\nprint(converted_values)\n#c) Triangular Numbers List Comprehension\nimport random\nrandom_numbers = random.sample(range(1, 200), 50)\ntriangular_numbers = [num for num in random_numbers if (8 * num + 1) % 2 == 1 and (8 * num + 1) ** 0.5 % 1 == 0]\nprint(triangular_numbers)\n#a) Determine if Last Element of Tuple is Even\ndef last_element_is_even(t):\n    \"\"\"",
+        "detail": "practical8",
+        "documentation": {}
+    },
+    {
+        "label": "random_numbers",
+        "kind": 5,
+        "importPath": "practical8",
+        "description": "practical8",
+        "peekOfCode": "random_numbers = random.sample(range(1, 200), 50)\ntriangular_numbers = [num for num in random_numbers if (8 * num + 1) % 2 == 1 and (8 * num + 1) ** 0.5 % 1 == 0]\nprint(triangular_numbers)\n#a) Determine if Last Element of Tuple is Even\ndef last_element_is_even(t):\n    \"\"\"\n    Check if the last element of a tuple is even.\n    Parameters:\n    t (tuple): Input tuple.\n    Returns:",
+        "detail": "practical8",
+        "documentation": {}
+    },
+    {
+        "label": "triangular_numbers",
+        "kind": 5,
+        "importPath": "practical8",
+        "description": "practical8",
+        "peekOfCode": "triangular_numbers = [num for num in random_numbers if (8 * num + 1) % 2 == 1 and (8 * num + 1) ** 0.5 % 1 == 0]\nprint(triangular_numbers)\n#a) Determine if Last Element of Tuple is Even\ndef last_element_is_even(t):\n    \"\"\"\n    Check if the last element of a tuple is even.\n    Parameters:\n    t (tuple): Input tuple.\n    Returns:\n    bool: True if last element is even, False otherwise.",
+        "detail": "practical8",
+        "documentation": {}
+    },
+    {
+        "label": "tuple1",
+        "kind": 5,
+        "importPath": "practical8",
+        "description": "practical8",
+        "peekOfCode": "tuple1 = (1, 2, 3, 4, 5)\nprint(last_element_is_even(tuple1))  # Output: True\n#b) Name and Best Mark Function\ndef best_mark(t):\n    \"\"\"\n    Get the name and best mark from a tuple of name followed by marks.\n    Parameters:\n    t (tuple): Tuple containing name followed by marks.\n    Returns:\n    tuple: Tuple with name and best mark.",
+        "detail": "practical8",
+        "documentation": {}
+    },
+    {
+        "label": "student_tuple",
+        "kind": 5,
+        "importPath": "practical8",
+        "description": "practical8",
+        "peekOfCode": "student_tuple = (\"Senkatana\", 90, 85, 77)\nprint(best_mark(student_tuple))  # Output: ('Senkatana', 90)\n#a) Sum of Positive Integers in Input Line\ninput_line = input(\"Enter input line of the form number1+number2: \")\nnumbers = input_line.split('+')\nsum_numbers = sum(int(num) for num in numbers)\nprint(\"Sum:\", sum_numbers)\n#b) String Indexing and Slicing\nq = \"Paqama ke o qoqele moqoqo o qabolang\"\nprint(q[12:21])  # qoba ebola",
+        "detail": "practical8",
+        "documentation": {}
+    },
+    {
+        "label": "input_line",
+        "kind": 5,
+        "importPath": "practical8",
+        "description": "practical8",
+        "peekOfCode": "input_line = input(\"Enter input line of the form number1+number2: \")\nnumbers = input_line.split('+')\nsum_numbers = sum(int(num) for num in numbers)\nprint(\"Sum:\", sum_numbers)\n#b) String Indexing and Slicing\nq = \"Paqama ke o qoqele moqoqo o qabolang\"\nprint(q[12:21])  # qoba ebola\nprint(q[4:15])   # lebo oa qabola\nprint(q[7:19])   # ke qoqa le molemo\n# Capitalize for grammatical correctness",
+        "detail": "practical8",
+        "documentation": {}
+    },
+    {
+        "label": "numbers",
+        "kind": 5,
+        "importPath": "practical8",
+        "description": "practical8",
+        "peekOfCode": "numbers = input_line.split('+')\nsum_numbers = sum(int(num) for num in numbers)\nprint(\"Sum:\", sum_numbers)\n#b) String Indexing and Slicing\nq = \"Paqama ke o qoqele moqoqo o qabolang\"\nprint(q[12:21])  # qoba ebola\nprint(q[4:15])   # lebo oa qabola\nprint(q[7:19])   # ke qoqa le molemo\n# Capitalize for grammatical correctness\nprint(q[12].upper() + q[13:21])  # Qoba Ebola",
+        "detail": "practical8",
+        "documentation": {}
+    },
+    {
+        "label": "sum_numbers",
+        "kind": 5,
+        "importPath": "practical8",
+        "description": "practical8",
+        "peekOfCode": "sum_numbers = sum(int(num) for num in numbers)\nprint(\"Sum:\", sum_numbers)\n#b) String Indexing and Slicing\nq = \"Paqama ke o qoqele moqoqo o qabolang\"\nprint(q[12:21])  # qoba ebola\nprint(q[4:15])   # lebo oa qabola\nprint(q[7:19])   # ke qoqa le molemo\n# Capitalize for grammatical correctness\nprint(q[12].upper() + q[13:21])  # Qoba Ebola\nprint(q[4].upper() + q[5:15])    # Lebo oa Qabola",
+        "detail": "practical8",
+        "documentation": {}
+    },
+    {
+        "label": "q",
+        "kind": 5,
+        "importPath": "practical8",
+        "description": "practical8",
+        "peekOfCode": "q = \"Paqama ke o qoqele moqoqo o qabolang\"\nprint(q[12:21])  # qoba ebola\nprint(q[4:15])   # lebo oa qabola\nprint(q[7:19])   # ke qoqa le molemo\n# Capitalize for grammatical correctness\nprint(q[12].upper() + q[13:21])  # Qoba Ebola\nprint(q[4].upper() + q[5:15])    # Lebo oa Qabola\nprint(q[7].upper() + q[8:19])    # Ke Qoqa le Molemo\n#c) Word Length Adjustment Function\ndef adjust_word_length(word, length):",
+        "detail": "practical8",
+        "documentation": {}
+    },
+    {
+        "label": "plate",
+        "kind": 5,
+        "importPath": "practical8",
+        "description": "practical8",
+        "peekOfCode": "plate = input(\"Enter characters for license plate: \")\nif len(plate) == 5 and plate[0].isalpha() and plate[1:].isnumeric():\n    print(\"Valid for older style license plate.\")\nelif len(plate) == 8 and plate[:5].isalpha() and plate[5:].isupper():\n    print(\"Valid for newer style license plate.\")\nelse:\n    print(\"Not valid for either style of license plate.\")\n#a) Dictionary of Cubic Numbers\ncubic_dict = {num: num ** 3 for num in range(1, 11)}\nprint(cubic_dict)",
+        "detail": "practical8",
+        "documentation": {}
+    },
+    {
+        "label": "cubic_dict",
+        "kind": 5,
+        "importPath": "practical8",
+        "description": "practical8",
+        "peekOfCode": "cubic_dict = {num: num ** 3 for num in range(1, 11)}\nprint(cubic_dict)\n#a) Dictionary of Cubic Numbers\ncubic_dict = {num: num ** 3 for num in range(1, 11)}\nprint(cubic_dict)\n#b) Print Names and Contacts\ndef print_contacts(names, contacts_dict):\n    \"\"\"\n    Print names and corresponding contact numbers.\n    Parameters:",
+        "detail": "practical8",
+        "documentation": {}
+    },
+    {
+        "label": "cubic_dict",
+        "kind": 5,
+        "importPath": "practical8",
+        "description": "practical8",
+        "peekOfCode": "cubic_dict = {num: num ** 3 for num in range(1, 11)}\nprint(cubic_dict)\n#b) Print Names and Contacts\ndef print_contacts(names, contacts_dict):\n    \"\"\"\n    Print names and corresponding contact numbers.\n    Parameters:\n    names (list): List of names.\n    contacts_dict (dict): Dictionary of contacts.\n    \"\"\"",
+        "detail": "practical8",
+        "documentation": {}
+    },
+    {
+        "label": "names_list",
+        "kind": 5,
+        "importPath": "practical8",
+        "description": "practical8",
+        "peekOfCode": "names_list = [\"Limo\", \"Senkatana\"]\ncontacts = {\"Limo\": 62123456, \"Thabo\": 65432178}\nprint_contacts(names_list, contacts)",
+        "detail": "practical8",
+        "documentation": {}
+    },
+    {
+        "label": "contacts",
+        "kind": 5,
+        "importPath": "practical8",
+        "description": "practical8",
+        "peekOfCode": "contacts = {\"Limo\": 62123456, \"Thabo\": 65432178}\nprint_contacts(names_list, contacts)",
+        "detail": "practical8",
+        "documentation": {}
+    },
+    {
+        "label": "txt_from_file",
+        "kind": 2,
+        "importPath": "practical9",
+        "description": "practical9",
+        "peekOfCode": "def txt_from_file(file_name):\n    \"\"\"\n    Read text from a file and return it as a string.\n    Parameters:\n    file_name (str): Name of the file to read.\n    Returns:\n    str: Text read from the file.\n    \"\"\"\n    try:\n        with open(file_name, 'r') as file:",
+        "detail": "practical9",
+        "documentation": {}
+    },
+    {
+        "label": "extract_student_num",
+        "kind": 2,
+        "importPath": "practical9",
+        "description": "practical9",
+        "peekOfCode": "def extract_student_num(text):\n    \"\"\"\n    Extract the student number from a string.\n    Parameters:\n    text (str): Input text containing student number.\n    Returns:\n    str: Extracted student number.\n    \"\"\"\n    student_num = ''.join(filter(str.isdigit, text))\n    if len(student_num) != 9:",
+        "detail": "practical9",
+        "documentation": {}
+    },
+    {
+        "label": "single_dig_generator",
+        "kind": 2,
+        "importPath": "practical9",
+        "description": "practical9",
+        "peekOfCode": "def single_dig_generator(num):\n    \"\"\"\n    Generate a single digit from a positive number.\n    Parameters:\n    num (int): Positive number.\n    Returns:\n    int: Single digit.\n    \"\"\"\n    if num < 10:\n        return num",
+        "detail": "practical9",
+        "documentation": {}
+    },
+    {
+        "label": "district",
+        "kind": 2,
+        "importPath": "practical9",
+        "description": "practical9",
+        "peekOfCode": "def district(num):\n    \"\"\"\n    Map a number to a district using a dictionary.\n    Parameters:\n    num (int): Number representing a district.\n    Returns:\n    str: District name.\n    \"\"\"\n    district_mapping = {\n        1: \"Maseru\",",
+        "detail": "practical9",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "practical9",
+        "description": "practical9",
+        "peekOfCode": "def main():\n    profile_text = txt_from_file(\"profile.txt\")\n    if profile_text:\n        student_num = extract_student_num(profile_text)\n        if student_num:\n            district_num = single_dig_generator(int(student_num))\n            district_name = district(district_num)\n            print(student_num, \"is team\", district_name)\nprint(main())",
+        "detail": "practical9",
+        "documentation": {}
+    },
+    {
+        "label": "myst",
+        "kind": 2,
+        "importPath": "text",
+        "description": "text",
+        "peekOfCode": "def myst(L):\n return 0 if not L else L[0] + myst(L[1:]) # Use ternary expression\nprint(myst(\"Tsolo\"))",
+        "detail": "text",
+        "documentation": {}
+    }
+]
